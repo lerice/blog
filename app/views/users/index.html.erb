@@ -1,0 +1,9 @@
+<h1>current users</h1>
+ 
+<ul>
+<% @users.each do |user| %>
+  <li><%= link_to user.email, :action => 'show', :id => user %></li>
+<% end %>
+</ul>
+
+<%= link_to 'Back', home_path %>

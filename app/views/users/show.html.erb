@@ -1,0 +1,19 @@
+<p>
+	<strong>yo username is:</strong>
+	<%= @user.email %>
+</p>
+
+<p>
+	<strong>yo usertype is</strong>
+	<%= @user.usertype %>
+</p>
+
+<p>
+	<strong>YOU HAVE <%= @user.pokes %> POKES LOL</strong>
+</p>
+
+<p>
+	<%= link_to 'poke meeee', poke_user_path(@user), method: :put %> 
+</p>
+
+<%= link_to 'Back', users_path %>
