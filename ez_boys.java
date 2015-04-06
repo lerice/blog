@@ -1,7 +1,7 @@
 /**
  * Sequence models number sequences.
  * 
- * @author PENISVAGINA
+ * @author a monkey could code this
  * @version 6/4/2015
  */
 import java.util.ArrayList;
@@ -58,7 +58,7 @@ public class Sequence
 		double firstInSequence = sequence[0];
 
 		// Go through the list, ignore the first:
-		for (int i = 1; i < sequence.length - 1; i++) {
+		for (int i = 1; i < sequence.length; i++) {
 			// Grab the current double:
 			double currentDouble = sequence[i];
 
@@ -86,7 +86,7 @@ public class Sequence
 		double previousDouble = sequence[0];
 
 		// Loop! Start from index 1:
-		for (int i = 1; i < sequence.length - 1; i++) {
+		for (int i = 1; i < sequence.length; i++) {
 			// Figure out the difference of the current and previous:
 			double currentDouble = sequence[i];
 			double currentDifference = currentDouble - previousDouble;
@@ -107,7 +107,7 @@ public class Sequence
 	public void updateSequence(Term t)
 	{
 		// So, GUESS WHAT MORE LOOPS. Go through the sequence:
-		for (int i = 0; i < sequence.length - 1; i++) {
+		for (int i = 0; i < sequence.length; i++) {
 			// NOW: tricky bit - REPLACE the 'currentDouble' with itself, minus the term thingy
 			// We can't extract the currentDouble in a variable 
 			//          like double currentDouble = sequence[i]
